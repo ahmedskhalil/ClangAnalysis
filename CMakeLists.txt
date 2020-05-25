@@ -94,4 +94,11 @@ target_link_libraries(filepreprocessor ${CLANGLIBS})
 target_link_libraries(filepreprocessor ${LLVMLIBS})
 target_link_libraries(filepreprocessor ${AUXLIBS})
 
+add_executable(includeheader includeheaders.cpp)
+target_link_libraries(includeheader ${CLANGLIBS})
+target_link_libraries(includeheader ${LLVMLIBS})
+target_link_libraries(includeheader ${AUXLIBS})
+
+
+
 
