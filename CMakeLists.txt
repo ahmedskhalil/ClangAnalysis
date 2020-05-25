@@ -99,6 +99,11 @@ target_link_libraries(includeheader ${CLANGLIBS})
 target_link_libraries(includeheader ${LLVMLIBS})
 target_link_libraries(includeheader ${AUXLIBS})
 
+add_executable(parser parser.cpp)
+target_link_libraries(parser ${CLANGLIBS})
+target_link_libraries(parser ${LLVMLIBS})
+target_link_libraries(parser ${AUXLIBS})
+
 
 
 
