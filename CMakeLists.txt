@@ -104,6 +104,7 @@ target_link_libraries(parser ${CLANGLIBS})
 target_link_libraries(parser ${LLVMLIBS})
 target_link_libraries(parser ${AUXLIBS})
 
-
-
-
+add_executable(semanticanalysis semanticanalysis.cpp)
+target_link_libraries(semanticanalysis ${CLANGLIBS})
+target_link_libraries(semanticanalysis ${LLVMLIBS})
+target_link_libraries(semanticanalysis ${AUXLIBS})
